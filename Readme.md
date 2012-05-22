@@ -123,7 +123,9 @@ public class ContactsAPIManager extends HttpServlet {
 Mapeando métodos del Servlet a una determinada URI y creando el correspondiente
 objeto de negocio a partir de la URI. En este caso particular, vemos como agregar
 un contacto (artesanal),cuando se ejecuta la siguiente URI
-  GET  /AddContact?contactName={contactName}&contactAddress={contactName}&contactCity={contactCity}&contactState={contactState}&contactEmail={contactEmail}&contactTwitter={contactTwitter}&contactSkype={contactSkype}
+```	
+GET  /AddContact?contactName={contactName}&contactAddress={contactName}&contactCity={contactCity}&contactState={contactState}&contactEmail={contactEmail}&contactTwitter={contactTwitter}&contactSkype={contactSkype}
+```
 
 En el doGet (ver codigo anterior), de acuerdo al valor del pathInfo se realiza el correspondiente dispath.
 
