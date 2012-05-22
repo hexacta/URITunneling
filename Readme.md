@@ -225,7 +225,7 @@ TODO
 *  Implementar clientes en diferentes lenguajes.
 *  Implementar la estrategia de URI Tunneling, utilizando solo POST.
 *  Implementar la estrategia de URI Tunneling, utilizando GET, POST cuando corresponda.
-*  Utilizar [URI-Templates][5]
+*  Utilizar [URI-Templates][5].
 
 
 
@@ -234,4 +234,4 @@ TODO
 [2]: http://www.w3.org/Protocols/rfc2616/rfc2616.html                     "HTTP"
 [3]: http://www.flickr.com/services/api/                                  "Flickr"
 [4]: http://delicious.com/developers                                      "delicious"
-[5]: http://tools.ietf.org/html/rfc6570					  "URI-Templates" 	
+[5]: http://tools.ietf.org/rfc/rfc6570.txt					  "URI-Templates"
