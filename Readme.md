@@ -83,10 +83,11 @@ Contacts URI Tunneling Protocol (GET,POST)
 URI Tunneling, implementación utilizando Servlets
 --------------------------------------------------
 En esta implementación se usa un solo servlet y de acuerdo al
-valor del pathInfo se termina llamando al metodo correspondiente, 
-que realiza el parsing, en caso de ser neceario del queryString, 
-para despues poder crear un objecto Contact.Otra alternativa seria crear un servlet por operación.
-El codigo fuente de la implementacion del server en java y el cliente en cURL se puede obtener
+valor del _pathInfo_ se termina llamando al método correspondiente, 
+que realiza el parsing,en algunos casos sera necesario parsear el  _queryString_
+a partir del cual se crea un objecto instacia de la clase _Contact_. Es una de las
+posibles implementaciones, en la sección TODO se describen otras alternativas para implementar.
+El código fuente de la implementacion del server en java y el cliente en cURL se puede obtener
 utilizando el siguiente comando <<  git clone https://github.com/hexacta/URITunneling   >>, o
 simplemente bajando el ZIP.
 
@@ -220,10 +221,11 @@ Date: Tue, 22 May 2012 20:13:34 GMT
 
 TODO
 ----
-* Implementar la estrategia de URI Tunneling, utilizando otros lenguages.
-* Implementar clientes en diferentes lenguajes.
-* Implementar la estrategia de URI Tunneling, utilizando solo POST.
-* Implementar la estrategia de URI Tunneling, utilizando GET, POST cuando corresponda.
+*  Implementar la estrategia de URI Tunneling, utilizando otros lenguages.
+*  Implementar clientes en diferentes lenguajes.
+*  Implementar la estrategia de URI Tunneling, utilizando solo POST.
+*  Implementar la estrategia de URI Tunneling, utilizando GET, POST cuando corresponda.
+*  Utilizar [URI-Templates][5]
 
 
 
@@ -232,3 +234,4 @@ TODO
 [2]: http://www.w3.org/Protocols/rfc2616/rfc2616.html                     "HTTP"
 [3]: http://www.flickr.com/services/api/                                  "Flickr"
 [4]: http://delicious.com/developers                                      "delicious"
+[5]: http://tools.ietf.org/html/rfc6570					  "URI-Templates" 	
